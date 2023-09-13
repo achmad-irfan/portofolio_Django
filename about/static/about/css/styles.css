@@ -27,4 +27,5 @@
 
 .aboutContent p {
   font-size: 2px;
+  border: 20px solid red;
 }
