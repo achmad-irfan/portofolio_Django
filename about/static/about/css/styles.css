@@ -1,0 +1,26 @@
+@media (max-width: 992px) {
+  /* Gaya yang diterapkan ketika lebar viewport maksimum 768px */
+}
+
+.contain-isi {
+  background-image: url("/static/about/img/beige.png");
+  height: 250%;
+  margin-left: 3vw;
+}
+
+.app-title {
+  padding-top: 1.5vw;
+  font-size: 4vw;
+  text-align: left;
+}
+
+.isi {
+  margin-left: 3vw;
+}
+
+.aboutContent {
+  background-color: rgb(204, 202, 221);
+  margin-right: 2vw;
+  border-radius: 2vw;
+  padding: 1.5vw;
+}

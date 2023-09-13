@@ -1,0 +1,29 @@
+.serviceItem {
+  margin-bottom: 1.5vw;
+  height: 13vw;
+  background-color: rgb(204, 202, 221);
+  border-radius: 3vw;
+}
+
+.serviceItem i {
+  color: blue;
+  font-size: 5vw;
+  float: right;
+  margin-right: 2vw;
+  margin-left: 1vw;
+}
+
+.serviceItemCol {
+  column-count: 2;
+}
+
+.serviceItem h4 {
+  color: blue;
+  margin-left: 2.5vw;
+  padding-top: 1vw;
+}
+
+.serviceItem h5 {
+  margin-left: 2.5vw;
+  padding-top: 1vw;
+}
