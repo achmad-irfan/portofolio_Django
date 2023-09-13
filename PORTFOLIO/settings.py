@@ -31,7 +31,7 @@ SECRET_KEY = "django-insecure-wy=1=*hfu$&hfib6zx8i*#yu7i01yj5%jybtj*_2h#z*xx750c
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['achmad-irfan.cloud/latihan']
 
 
 # Application definition
