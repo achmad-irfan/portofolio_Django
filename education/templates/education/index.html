@@ -20,7 +20,7 @@
 <div class="row isi">
   <div class="col-5 school">
     <div class="edu">
-      <h4>Education</h4>
+      <h4 class="head">Education</h4>
       <ul>
         {% for edu in school %}
         <li>{{edu.college}}</li>
@@ -32,7 +32,7 @@
       <hr>
     </div>
     <div class="certification">
-      <h4>Certifications</h4>
+      <h4 class="head">Certifications</h4>
       <ul>
         {% for cert in certificate %}
         <li>{{cert.major}}</li>
@@ -44,7 +44,7 @@
       <hr>
     </div>
     <div class="workExp">
-      <h4>Work Experience</h4>
+      <h4 class="head">Work Experience</h4>
       <ul>
         {% for work in workexp %}
         <li>{{work.title}}</li>
@@ -65,7 +65,7 @@
   </div>
   <div class="col-6 experience">
     <div class="projectExp">
-      <h4>Project Experience</h4>
+      <h4 class="head">Project Experience</h4>
       <ul>
         {% for project in projectexp %}
         <li>{{project.title}}</li>

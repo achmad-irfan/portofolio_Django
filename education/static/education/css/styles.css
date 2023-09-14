@@ -11,11 +11,12 @@
   padding: 1.5vw;
 }
 
-h4 {
-  font-size: 3.9vw;
+.head {
+  font-size: 2vw;
   margin-bottom: 2.2vw;
-  color: blue;
+  color: rgb(13, 0, 255);
 }
+
 li {
   font-size: 1.6vw;
   margin-bottom: 0.3vw;
@@ -37,17 +38,26 @@ li {
 .city {
   display: inline-block;
   font-style: italic;
-  font-size: 1.3vw;
   margin: 0.6vw 0;
   font-size: 1.5vw;
 }
 
 .headingEducation {
   font-weight: bold;
+  font-size: 1.6vw;
 }
 
 .jobdesc {
   font-size: 1.2vw;
   margin-bottom: 0.3vw;
   color: rgb(4, 4, 4);
+}
+
+p {
+  font-size: 1.2vw;
+}
+
+.eduMajor,
+.edudesc {
+  font-size: 1.4vw;
 }
