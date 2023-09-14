@@ -19,6 +19,7 @@
 
 .serviceItem h4 {
   color: blue;
+  font-size: 1.7vw;
   margin-left: 2.5vw;
   padding-top: 1vw;
 }
@@ -26,4 +27,9 @@
 .serviceItem h5 {
   margin-left: 2.5vw;
   padding-top: 1vw;
+  font-size: 1.2vw;
+}
+
+.headerservice {
+  font-size: 2.1vw;
 }
