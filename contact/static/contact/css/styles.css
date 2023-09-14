@@ -24,7 +24,25 @@
 
 .btn {
   margin-top: 1vw;
+  width: 10vw;
+  height: 3vw;
+  margin-left: 2vw;
 }
 .form-group {
   margin-left: 2vw;
+  font-size: 1.5vw;
+}
+
+.contactItem h3 {
+  font-size: 2vw;
+}
+
+.contactItem h4 {
+  font-size: 1.5vw;
+}
+
+.btn.btn-dark[type="Submit"] {
+  font-size: 1.5vw;
+  text-align: center;
+  line-height: 0.75vw;
 }
