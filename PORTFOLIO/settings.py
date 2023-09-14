@@ -32,7 +32,7 @@ SECRET_KEY = "django-insecure-wy=1=*hfu$&hfib6zx8i*#yu7i01yj5%jybtj*_2h#z*xx750c
 DEBUG = True
 
 ALLOWED_HOSTS = ['achmad-irfan.cloud',
-                 'www.achmad-irfan.cloud','127.0.0.1','*']
+                 'www.achmad-irfan.cloud', '127.0.0.1', '*']
 
 
 # Application definition
@@ -89,9 +89,9 @@ WSGI_APPLICATION = "PORTFOLIO.wsgi.application"
 DATABASES = {
     "default": {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'achmadi1_portF2',
+        'NAME': 'achmadi1_db_portfolio',
         'USER': 'achmadi1_irfan',
-        'PASSWORD': '2rN%nBQF9l%@',
+        'PASSWORD': '.TT*Y8NPFqeQ',
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }
