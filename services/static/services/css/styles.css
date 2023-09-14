@@ -36,4 +36,5 @@
 
 .isi .what {
   font-size: 2vw;
+  border: 5px solid red;
 }
