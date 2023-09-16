@@ -41,7 +41,7 @@ body {
   height: 100%;
   width: 25%;
   background: var(--sidebar-color);
-  padding: 1.5vw 1.5vw;
+  padding: 15px 15px;
   transition: var(--tran-002);
 }
 
@@ -55,14 +55,14 @@ body {
 
 /* --- Reusable CSS ---*/
 .sidebar .text {
-  font-size: 1.7vw;
+  font-size: 17px;
   transition: var(--tran-005);
   white-space: nowrap;
   opacity: 1;
 }
 
 .sidebar .image {
-  min-width: 6vw;
+  min-width: 60px;
   display: flex;
   align-items: center;
 }
