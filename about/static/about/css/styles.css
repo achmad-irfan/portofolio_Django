@@ -12,11 +12,22 @@
   margin: 30px 20px auto 20px;
   border-radius: 20px;
   padding: 20px;
+  box-shadow: 10px 10px 10px white;
 }
 
 .aboutContent p {
   font-size: 1.8em;
   color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .app-title {
+    font-size: 2em;
+  }
+
+  .aboutContent p {
+    font-size: 1.2em;
+  }
 }
 
 @media screen and (max-width: 575px) {

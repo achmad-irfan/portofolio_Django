@@ -85,6 +85,7 @@ div.icon {
 .contain-isi {
   border-left: 10px solid white;
   background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/darkness.png");
+  padding-right: 20px;
 }
 
 .contain-isi-home {
