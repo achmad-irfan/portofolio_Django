@@ -8,7 +8,7 @@ def index(request):
     context = {
         'title': 'Achmad Irfan Afandi',
         'tile': 'Home',
-        'subtitle': 'Data Analyst and Python Developer',
+        'subtitle': 'Data Analyst',
         'projectForm': projectForm
     }
 
