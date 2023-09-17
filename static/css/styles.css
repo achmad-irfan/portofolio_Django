@@ -1,199 +1,107 @@
-@media (max-width: 992px) {
-  /* Gaya yang diterapkan ketika lebar viewport maksimum 768px */
-}
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
-
 * {
-  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  color: rgb(255, 255, 255);
 }
 
-:root {
-  /* -- Color -- */
-  --body-color: rgb(102, 208, 134);
-  --sidebar-color: url("https://www.toptal.com/designers/subtlepatterns/uploads/ep_naturalblack.png");
-  --primary-color: rgb(82, 45, 45);
-  --primary-color-light: white;
-  --secondary-color: rgb(144, 233, 144);
-  --toggle-color: #3d3f3c;
-  --font-size: 16px;
-
-  /* -- Transition -- */
-  --tran-002: all 0.2s ease;
-  --tran-003: all 0.2s ease;
-  --tran-004: all 0.2s ease;
-  --tran-005: all 0.2s ease;
-  --tran-006: all 0.2s ease;
+.container {
+  display: grid;
+  grid-template-columns: 1.8fr 7fr;
+  width: 100%;
 }
 
-body {
+nav.sidebar {
+  display: grid;
+  grid-template-rows: 2.5fr 1fr 10fr;
+  background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/ep_naturalblack.png");
   height: 100vh;
-  background: var(--body-color);
+  border-right: 10px solid white;
 }
 
-.sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 25%;
-  background: var(--sidebar-color);
-  padding: 15px 15px;
-  transition: var(--tran-002);
+header.logo {
+  display: grid;
+  grid-template-columns: 1fr;
 }
-
-.closeSidebar {
-  width: 9%;
-}
-
-.hidden {
-  display: none;
-}
-
-/* --- Reusable CSS ---*/
-.sidebar .text {
-  font-size: 17px;
-  transition: var(--tran-005);
-  white-space: nowrap;
-  opacity: 1;
-}
-
-.sidebar .image {
-  min-width: 60px;
+.image-text {
   display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: start;
+  padding: 15px;
 }
 
-.sidebar .image-text img {
-  width: 5.6vw;
-  border-radius: 0.5vw;
+span.image img {
+  width: 70px;
+  height: 70px;
 }
 
-.sidebar header .image-text {
+.header-text {
+  font-size: 1.5em;
+  justify-self: center;
+  padding: 10px;
+}
+
+div.icon {
   display: flex;
-  align-items: center;
 }
 
-.sidebar header .toggle {
-  position: absolute;
-  top: 15%;
-  right: -2vw;
-  transform: translateY(-50%);
-  height: 3.5vw;
-  width: 3.5vw;
-  background: var(--toggle-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 4.5vw;
-  color: black;
-}
-.icon-social {
-  font-size: 1vw;
-}
-.sidebar .name {
-  color: rgb(0, 0, 255);
-}
-
-form {
-  width: 20%;
-}
-.contain-isi {
-  width: 75%;
-  float: right;
-  height: 300%;
-  border-left: 0.8vw solid rgb(52, 37, 37);
-  margin-left: 2vw;
-}
-
-.closeContainIsi {
-  width: 91%;
-}
-
-.contain-isi-home {
-  background-image: url("/static/img/blue-snow.png");
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-}
-
-.app-title {
-  color: rgb(14, 5, 44);
-  font-size: 6vw;
-  padding-left: 6vw;
-  padding-top: 20vw;
-}
-
-.sub-title {
-  margin-top: -2vw;
-  font-size: 3vw;
-  padding-left: 6vw;
-}
-.icon {
-  margin-top: 1vw;
-}
 .icon-social {
   display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hidden {
-  display: none;
-}
-.custom-icon {
-  font-size: 3.5vw;
-  margin-left: 0.5vw;
+  flex-direction: row;
+  font-size: 2.2em;
+  justify-content: space-evenly;
 }
 
 .menu {
-  display: flex;
-  justify-items: center;
-  flex-direction: column;
-  margin-top: 2vw;
+  display: grid;
+  grid-template-rows: repeat(7, 1fr);
+  place-content: stretch;
 }
 
 .menu-link {
-  border: 1px solid rgb(0, 0, 0);
-  width: 100%;
-  margin-bottom: 0.9vw;
-  border-radius: 5vw;
+  display: grid;
+  color: black;
+  grid-template-columns: 1fr 8fr;
+  place-content: center;
+  place-items: start center;
+  background-color: black;
+  font-size: 1.5em;
+  width: 90%;
+  height: 40px;
+  border-radius: 40px;
   background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/gravel.png");
-  height: 3.6vw;
-  display: flex;
-  align-items: center;
+  padding: 5px;
 }
 
-.menu-link i {
-  margin-left: 1.7vw;
-  font-size: 2.5vw;
+.contentMenu,
+.menu-link .bx,
+.menu-link .bi {
+  color: black;
 }
-.contentMenu {
-  margin-left: 1vw;
-  font-size: 1.5vw;
-}
-
-.menu-link.klik {
-  display: flex;
-  align-items: center;
-  justify-items: center;
+.toggleMenu {
+  display: none;
 }
 
-.menu-link:active {
-  background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/dust_scratches.png");
+.contain-isi {
+  background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/darkness.png");
 }
 
-.menu-link:hover {
-  background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/5-dots.png");
+.contain-isi-home {
+  height: 100vh;
+  font-size: 2.5em;
+  text-align: center;
 }
 
-.menu a {
-  text-decoration: none;
-}
-
-.app-title {
-  animation: "animate__animated animate__bounce";
+@media screen and (max-width: 576px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .contain-isi-home {
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+  }
+  nav.sidebar {
+    display: none;
+  }
 }
