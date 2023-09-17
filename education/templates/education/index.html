@@ -17,9 +17,9 @@
 {% block contain_isi %}
 <div class="app-title">{{title}}</div>
 <hr />
-<div class="row isi">
-  <div class="col-5 school">
-    <div class="edu">
+<div class="edu-content">
+  <div class="edu-content-1">
+    <div class="content edu">
       <h4 class="head">Education</h4>
       <ul>
         {% for edu in school %}
@@ -29,9 +29,8 @@
         <span class="eduMajor">{{edu.major}}</span>
         {% endfor %}
       </ul>
-      <hr>
     </div>
-    <div class="certification">
+    <div class="content certification">
       <h4 class="head">Certifications</h4>
       <ul>
         {% for cert in certificate %}
@@ -41,9 +40,8 @@
         <span class="edudesc">{{cert.certifier}}</span>
         {% endfor %}
       </ul>
-      <hr>
     </div>
-    <div class="workExp">
+    <div class="content workExp">
       <h4 class="head">Work Experience</h4>
       <ul>
         {% for work in workexp %}
@@ -61,10 +59,10 @@
         <p>{{work.jobdesk4}}</p>
        {% endfor %}
       </ul>
-    </div>
   </div>
-  <div class="col-6 experience">
-    <div class="projectExp">
+  </div>
+  <div class="edu-content2">
+    <div class="content projectExp">
       <h4 class="head">Project Experience</h4>
       <ul>
         {% for project in projectexp %}

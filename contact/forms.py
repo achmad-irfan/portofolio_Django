@@ -12,9 +12,3 @@ class ContactForm(forms.ModelForm):
     class Meta:
         model = ContactModel
         fields = '__all__'
-        widgets = {
-            'call': forms.TextInput(attrs={'placeholder': '+62-1234567890',
-                                           'class': 'form-group'}),
-            'message': forms.Textarea(attrs={'class': 'form-group',
-                                             'placeholder': 'Write your message here'})
-        }

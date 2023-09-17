@@ -1,17 +1,6 @@
-@media (max-width: 992px) {
-  /* Gaya yang diterapkan ketika lebar viewport maksimum 768px */
-}
-
-.contain-isi {
-  background-image: url("/static/about/img/beige.png");
-  height: 250%;
-  margin-left: 3vw;
-}
-
 .app-title {
-  padding-top: 1.5vw;
-  font-size: 4vw;
-  text-align: left;
+  padding: 20px;
+  font-size: 3.5em;
 }
 
 .isi {
@@ -20,11 +9,27 @@
 
 .aboutContent {
   background-color: rgb(204, 202, 221);
-  margin-right: 2vw;
-  border-radius: 2vw;
-  padding: 5vw;
+  margin: 30px 20px auto 20px;
+  border-radius: 20px;
+  padding: 20px;
 }
 
 .aboutContent p {
-  font-size: 2vw;
+  font-size: 1.8em;
+  color: black;
+}
+
+@media screen and (max-width: 575px) {
+  .app-title {
+    padding: 20px;
+    font-size: 2.2em;
+  }
+
+  .isi {
+    height: 100vh;
+  }
+
+  .aboutContent p {
+    font-size: 1.3em;
+  }
 }

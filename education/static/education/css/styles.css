@@ -1,63 +1,19 @@
-.row.isi {
-  width: 95%;
-  margin-left: 3vw;
+.edu-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: end;
+  margin: 20px;
+  gap: 10px;
 }
 
-.school,
-.experience {
+.content {
   background-color: rgb(204, 202, 221);
-  margin-right: 1vw;
-  border-radius: 2vw;
-  padding: 1.5vw;
+  border-radius: 10px;
+  padding: 10px 20px;
 }
 
-.head {
-  font-size: 2vw;
-  margin-bottom: 2.2vw;
-  color: rgb(13, 0, 255);
-}
-
-li {
-  font-size: 1.6vw;
-  margin-bottom: 0.3vw;
-  color: rgb(27, 20, 96);
-}
-.eduYear {
-  height: 2vw;
-  width: 10vw;
-  margin-bottom: 0.3vw;
-  display: inline-block;
-  background-color: rgb(97, 108, 110);
-  font-size: 1.1vw;
-}
-
-.edudesc {
-  margin-bottom: 4vw;
-}
-
-.city {
-  display: inline-block;
-  font-style: italic;
-  margin: 0.6vw 0;
-  font-size: 1.5vw;
-}
-
-.headingEducation {
-  font-weight: bold;
-  font-size: 1.6vw;
-}
-
-.jobdesc {
-  font-size: 1.2vw;
-  margin-bottom: 0.3vw;
-  color: rgb(4, 4, 4);
-}
-
-p {
-  font-size: 1.2vw;
-}
-
-.eduMajor,
-.edudesc {
-  font-size: 1.4vw;
+.edu-content-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }

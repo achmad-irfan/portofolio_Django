@@ -14,7 +14,7 @@ class Proyek(models.Model):
         ('Python Django', 'Python Django'),
     ]
     nama = models.CharField(max_length=50)
-    category = models.CharField(choices=ITEM_CHOICES, max_length=50)
+    category = models.CharField(choices=ITEM_CHOICES)
     gambar = models.ImageField(upload_to='media', blank=True, null=False)
     gambar2 = models.ImageField(upload_to='media', blank=True, null=False)
     gambar3 = models.ImageField(upload_to='media', blank=True, null=False)

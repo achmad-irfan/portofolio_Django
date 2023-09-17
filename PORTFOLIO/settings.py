@@ -9,10 +9,8 @@ https://docs.djangoproject.com/en/4.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
-
 import os
 from pathlib import Path
-
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -31,8 +29,7 @@ SECRET_KEY = "django-insecure-wy=1=*hfu$&hfib6zx8i*#yu7i01yj5%jybtj*_2h#z*xx750c
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['achmad-irfan.cloud',
-                 'www.achmad-irfan.cloud', '127.0.0.1', '*']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -89,14 +86,17 @@ WSGI_APPLICATION = "PORTFOLIO.wsgi.application"
 DATABASES = {
     "default": {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'achmadi1_db_portfolio',
-        'USER': 'achmadi1_irfan',
-        'PASSWORD': '.TT*Y8NPFqeQ',
+        'NAME': 'Portfolio',
+        'USER': 'postgres',
+        'PASSWORD': 'dave',
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }
 }
 
+
+# Password validation
+# https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -130,9 +130,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = "/static/"
-STATIC_ROOT = "/home/achmadi1/public_html/portfolio"
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
+
 ]
 
 # Default primary key field type
