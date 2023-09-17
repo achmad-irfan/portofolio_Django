@@ -1,0 +1,71 @@
+.headerservice {
+  font-size: 2em;
+  margin-top: 10px;
+}
+
+.serviceItemCol {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.serviceItem {
+  background-color: rgb(204, 202, 221);
+  border-radius: 10px;
+  padding: 10px 20px;
+  display: grid;
+  grid-template-areas: "icon service" " icon jobdesc";
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 10px 10px 10px white;
+}
+
+.serviceItem i {
+  grid-area: icon;
+  color: blue;
+  font-size: 7em;
+  place-self: center;
+}
+h4.service {
+  color: blue;
+  font-size: 1.8em;
+  grid-area: service;
+}
+h5 {
+  color: black;
+  grid-area: jobdesc;
+  font-size: 1.5vm;
+}
+
+@media screen and (max-width: 768px) {
+  .headerservice {
+    font-size: 1.5em;
+  }
+
+  .serviceItemCol {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .serviceItem {
+    border-radius: 5px;
+    padding: 10px 20px;
+    display: grid;
+    box-shadow: 5px 5px 5px white;
+    grid-template-columns: 1fr;
+  }
+
+  .serviceItem i {
+    grid-area: icon;
+    color: blue;
+    font-size: 4em;
+    place-self: center;
+  }
+
+  h4.service {
+    font-size: 1.2em;
+    grid-area: service;
+  }
+}
