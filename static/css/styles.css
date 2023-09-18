@@ -6,7 +6,7 @@
 
 .container {
   display: grid;
-  grid-template-columns: 1.8fr 7fr;
+  grid-template-columns: 2fr 7fr;
   width: 100%;
 }
 
@@ -19,25 +19,15 @@ nav.sidebar {
 
 header.logo {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 2.5fr;
+  place-items: center;
 }
-.image-text {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: start;
-  padding: 15px;
+span.name {
+  font-size: 1.4em;
 }
-
 span.image img {
   width: 70px;
   height: 70px;
-}
-
-.header-text {
-  font-size: 1.3em;
-  justify-self: center;
-  padding: 10px;
 }
 
 div.icon {
@@ -56,6 +46,7 @@ div.icon {
   grid-template-rows: repeat(7, 1fr);
   place-content: start center;
   width: 100%;
+  gap: 5px;
 }
 
 .menu-link {
@@ -65,12 +56,13 @@ div.icon {
   place-content: center;
   place-items: start center;
   background-color: black;
-  font-size: 1.3em;
+  font-size: 1.2em;
   width: 100%;
-  height: 40px;
+  height: 30px;
   border-radius: 40px;
   background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/gravel.png");
   padding: 5px;
+  gap: 10px;
 }
 
 .contentMenu,
@@ -98,28 +90,41 @@ div.icon {
     grid-template-columns: 1fr 3fr;
   }
   nav.sidebar {
-    grid-template-rows: 2fr 30fr 8fr auto;
+    grid-template-rows: 2fr 2fr 20fr;
     height: 100vh;
   }
 
   header.logo {
+    padding: 10px;
     display: grid;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    align-content: center;
     place-items: center;
   }
+
   span.name {
     display: none;
   }
   .icon-social {
-    display: none;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    font-size: 0.9em;
+    align-items: start;
+    justify-items: center;
   }
-
+  .icon-social i {
+    color: rgb(84, 84, 231);
+    font-size: 1.2em;
+  }
   .contentMenu {
     display: none;
   }
-
+  .menu i {
+    font-size: 1.5em;
+  }
   .menu-link {
     grid-template-columns: 1fr;
+    gap: 90px;
   }
 
   .contain-isi-home {
@@ -165,6 +170,7 @@ div.icon {
     top: 50px;
     transform: translateX(-95%);
     border: 5px solid white;
+    gap: 5px;
   }
 
   .slide {
@@ -173,8 +179,13 @@ div.icon {
   .menu-link {
     display: grid;
     grid-template-columns: 1fr 4fr;
+    gap: 10px;
   }
   .contentMenu {
     display: block;
+  }
+
+  .icon-social i {
+    font-size: 2em;
   }
 }
