@@ -18,15 +18,15 @@
 <div class="app-title">{{title}}</div>
 <hr />
 <div class="edu-content">
-  <div class="edu-content-1">
     <div class="content edu">
       <h4 class="head">Education</h4>
       <ul>
         {% for edu in school %}
+        <div class="content-head">
         <li>{{edu.college}}</li>
-        <span class="eduYear text-center">{{edu.year}}</span>
-        <br />
-        <span class="eduMajor">{{edu.major}}</span>
+        <li class="time">{{edu.year}}</li>
+        <li>{{edu.major}}</li>
+        </div>
         {% endfor %}
       </ul>
     </div>
@@ -34,10 +34,11 @@
       <h4 class="head">Certifications</h4>
       <ul>
         {% for cert in certificate %}
+        <div class="content-head">
         <li>{{cert.major}}</li>
-        <span class="eduYear text-center">{{cert.year}}</span>
-        <br />
-        <span class="edudesc">{{cert.certifier}}</span>
+        <li class="time">{{cert.year}}</li>
+        <li>{{cert.certifier}}</li>
+         </div>
         {% endfor %}
       </ul>
     </div>
@@ -45,41 +46,41 @@
       <h4 class="head">Work Experience</h4>
       <ul>
         {% for work in workexp %}
+        <div class="content-head">
         <li>{{work.title}}</li>
-        <p>{{work.company}}</p>
-        <span class="eduYear text-center">{{work.year}}</span>
-        <br />
-        <span class="city">{{work.city}}</span>
+        <li>{{work.company}}</li>
+         <li class="time">{{work.year}}</li>
+        <li>{{work.city}}</li>
         <h5 class="headingEducation">Jobdesc:</h5>
-         <ul>
-          <li class="jobdesc">{{work.jobdesk1}}</li>
-          <li class="jobdesc">{{work.jobdesk2}}</li>
-          <li class="jobdesc">{{work.jobdesk3}}</li>
+         <ul class="jobdescs">
+          <li>{{work.jobdesk1}}</li>
+          <li>{{work.jobdesk2}}</li>
+          <li>{{work.jobdesk3}}</li>
         </ul>
         <p>{{work.jobdesk4}}</p>
+        </div>
        {% endfor %}
       </ul>
   </div>
-  </div>
-  <div class="edu-content2">
+ 
     <div class="content projectExp">
       <h4 class="head">Project Experience</h4>
       <ul>
         {% for project in projectexp %}
+        <div class="content-head">
         <li>{{project.title}}</li>
-        <span class="eduYear text-center">{{project.year}}</span>
-        <br />
-        <span class="city">{{project.city}}</span>
+        <li class="time">{{project.year}}</li>
+        <li class="time">{{project.city}}</li>
         <h5 class="headingEducation">Background:</h5>
         <p>{{project.background}}</p>
         <h5 class="headingEducation">Jobdesc:</h5>
-        <ul>
-          <li class="jobdesc">{{project.jobdesk1}}</li>
-          <li class="jobdesc">{{project.jobdesk2}}</li>
-        </ul>
-        <p>{{project.jobdesk4}}</p>
+        <ul class="jobdescs">
+          <li>{{project.jobdesk1}}</li>
+          <li>{{project.jobdesk2}}</li>
+          <p>{{project.jobdesk4}}</p>
+          </div>
       {% endfor %}
+      </ul>
     </div>
-  </div>
 </div>
 {% endblock %}

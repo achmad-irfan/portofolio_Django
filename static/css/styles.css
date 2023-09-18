@@ -11,6 +11,8 @@
 }
 
 nav.sidebar {
+  /* position: sticky;
+  top: 0; */
   display: grid;
   grid-template-rows: 2fr 1fr 8fr auto;
   background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/ep_naturalblack.png");
@@ -19,11 +21,11 @@ nav.sidebar {
 
 header.logo {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 2.5fr;
   place-items: center;
 }
 span.name {
-  font-size: 1.3em;
+  font-size: 1.4em;
 }
 span.image img {
   width: 70px;
@@ -91,7 +93,6 @@ div.icon {
   }
   nav.sidebar {
     grid-template-rows: 2fr 2fr 20fr;
-    height: 100vh;
   }
 
   header.logo {
@@ -108,7 +109,7 @@ div.icon {
   .icon-social {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    font-size: 0.9em;
+    font-size: 1.5vw;
     align-items: start;
     justify-items: center;
   }
@@ -165,6 +166,7 @@ div.icon {
   }
 
   .sidebar {
+    position: relative;
     width: 70%;
     position: absolute;
     top: 50px;

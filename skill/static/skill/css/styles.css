@@ -2,16 +2,16 @@
   padding: 30px 50px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  gap: 25px;
 }
 
 img {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
 }
 
 li {
-  font-size: 2em;
+  font-size: 1.3em;
   background-color: rgb(218, 226, 234);
   list-style: none;
   color: blue;
@@ -25,14 +25,15 @@ li {
     gap: 13px;
   }
   img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     display: block;
     text-align: center;
   }
 
   li {
     font-size: 1em;
+    color: black;
     padding: 5px 30px;
     border-radius: 10px;
     box-shadow: 5px 5px 5px rgb(255, 255, 255);
